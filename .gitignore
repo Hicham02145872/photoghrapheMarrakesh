@@ -1,0 +1,8 @@
+﻿node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env*
+
+# Local design review screenshots
+/*-preview.png

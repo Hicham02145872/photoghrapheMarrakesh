@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clone Design Elegant"
+  short_description: "Reproduire un design et affiner son impact client"
+  default_prompt: "Utilise $clone-design-elegant pour reproduire ce design de reference et le rendre plus elegant et convaincant pour mes clients."
