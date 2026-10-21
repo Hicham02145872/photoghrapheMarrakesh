@@ -21,7 +21,7 @@ Le build produit un site statique dans `out/`, déployable sur un hébergement s
 ## Contenu et contact
 
 - Les images dans `public/images/` proviennent du site de référence et sont utilisées pour la reproduction demandée. Leur présence ne constitue pas une autorisation de réutilisation publique.
-- Coordonnées reprises de la référence : Hello@linagraphy.com et +212 681 31 81 81.
+- Coordonnées reprises de la référence : hamidsos64@gmail.com et +212 681 31 81 81.
 - Le formulaire prépare un lien mailto et ouvre le logiciel de messagerie. Il n’envoie et ne stocke aucune demande. L’utilisateur doit envoyer son message depuis son application e-mail.
 - Galerie : filtres par catégorie ; clic pour agrandir ; Échap pour fermer.
 - Le site a été analysé par son HTML, son CSS et ses photos. Le site original a été analysé via son HTML, ses styles et ses images ; la version locale a ensuite été vérifiée dans le navigateur.

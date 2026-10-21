@@ -41,7 +41,7 @@ export function SiteFooter(){const {locale,setLocale}=useLanguage();return <foot
   <section><h2><Bilingual fr="Nos Services" en="Our services"/></h2><FooterLinks items={footerServices} label="Services de photographie"/></section>
   <section className="footer-contact-column"><h2><Bilingual fr="Contactez-nous" en="Get in touch"/></h2><FooterLinks items={[["Faq","/faq/","FAQ"],["Portfolio","/portfolio/","Portfolio"],["À propos de nous","/a-propos/","About us"]]} label="Informations et contact"/>
    
-   <address><a href="tel:+212776090380">+212 776 090 380</a><a href="mailto:Hello@linagraphy.com">Hello@linagraphy.com</a><a href="https://www.instagram.com/photo_graphe.z4/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @photo_graphe.z4 (nouvel onglet)">Instagram · @photo_graphe.z4</a></address>
+   <address><a href="tel:+212776090380">+212 776 090 380</a><a href="mailto:hamidsos64@gmail.com">hamidsos64@gmail.com</a><a href="https://www.instagram.com/photo_graphe.z4/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @photo_graphe.z4 (nouvel onglet)">Instagram · @photo_graphe.z4</a></address>
   </section>
  </div>
  <div className="section-shell footer-map"><div><div className="eyebrow"><Bilingual fr="NOUS TROUVER" en="FIND US"/></div><h2>La Koutoubia,<br/><em>Marrakech.</em></h2></div><LocationMap compact/></div>
