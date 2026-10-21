@@ -1,0 +1,6 @@
+.portfolio-teaser{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding-block:30px;margin-block:12px 0;border-block:1px solid var(--line)}
+.portfolio-teaser h2{font-size:clamp(32px,3.2vw,44px);line-height:1.12;letter-spacing:-1.5px;margin-top:12px}
+.portfolio-teaser-action{max-width:420px;justify-self:end}
+.portfolio-teaser-action p{font-size:14px;line-height:1.7;color:var(--muted);margin-bottom:16px}
+.portfolio-teaser-action .button{padding:14px 20px;min-height:46px}
+@media(max-width:639px){.portfolio-teaser{grid-template-columns:1fr;gap:18px;padding-block:24px;margin-top:0}.portfolio-teaser-action{justify-self:start;max-width:100%}.portfolio-teaser h2{font-size:34px}.portfolio-teaser-action p{margin-bottom:14px}}

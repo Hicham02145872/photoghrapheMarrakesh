@@ -2,12 +2,9 @@
 import Image from 'next/image';
 import {useCallback,useEffect,useRef,useState} from 'react';
 const photos = [
-  {src:'couple.jpeg', category:'Couples', title:'À deux, dans la médina', location:'Marrakech'},
-  {src:'family.jpeg', category:'Familles', title:'Les petits instants, ensemble', location:'La médina'},
-  {src:'desert.jpeg', category:'Couples', title:'Un horizon pour deux', location:'Désert d’Agafay'},
-  {src:'portrait.jpg', category:'Portraits', title:'Simplement vous', location:'Marrakech'},
-  {src:'friends.jpg', category:'Entre amis', title:'La joie en partage', location:'Marrakech'},
-  {src:'couple-two.jpeg', category:'Couples', title:'Une promenade, une histoire', location:'La ville ocre'},
+  {src:'agafay-couple.webp', category:'Couples', title:'À deux, face à l’horizon', location:'Désert d’Agafay'},
+  {src:'riad-pool-portrait.webp', category:'Portraits', title:'Au bord de l’eau', location:'Un riad à Marrakech'},
+  {src:'riad-seated-portrait.webp', category:'Portraits', title:'Une pause, un regard', location:'Un riad à Marrakech'},
 ];
 
 
@@ -59,7 +56,7 @@ export default function Gallery(){
  const close=()=>{dialog.current?.close();setActive(null);};
  return <><section id="portfolio" className="section-shell portfolio scroll-mt-8">
   <div className="portfolio-heading"><div className="eyebrow">FRAGMENTS D’HISTOIRES</div><h2>Les instants passent.<br/><em>Les images restent.</em></h2><p>Un aperçu de nos rencontres, à travers Marrakech et ses alentours.</p></div>
-  <div className="filters" role="group" aria-label="Filtrer les photographies">{['Tout','Couples','Familles','Portraits','Entre amis'].map(f=><button key={f} onClick={()=>setFilter(f)} aria-pressed={filter===f} className={filter===f?'selected':''}>{f}</button>)}</div>
+  <div className="filters" role="group" aria-label="Filtrer les photographies">{['Tout',...new Set(photos.map(photo=>photo.category))].map(f=><button key={f} onClick={()=>setFilter(f)} aria-pressed={filter===f} className={filter===f?'selected':''}>{f}</button>)}</div>
   <div ref={story} className={`gallery-slider scroll-story${reduced?' reduced':''}`} style={{height:!reduced&&items.length>1?`${100+(items.length-1)*65}svh`:'auto'}} role="region" aria-roledescription="carrousel" aria-label="Photographies Linagraphy">
    <div ref={stage} className="slider-stage"><p id="slider-help" className="slider-help">Descendez dans la page : les images glissent au fil de votre découverte.</p>
    <div className="slider-viewport" ref={viewport} tabIndex={0} aria-label="Défilement des photos" aria-describedby="slider-help" onKeyDown={e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();goTo(position.current+(e.key==='ArrowRight'?1:-1));}}}>

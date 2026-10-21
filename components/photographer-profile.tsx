@@ -1,20 +1,24 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import {Arrow} from './icons';
+import {Bilingual} from './language-provider';
+
+const instagram='https://www.instagram.com/photo_graphe.z4/';
+function InstagramIcon(){return <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>}
+function HighlightIcon({kind}:{kind:'portrait'|'couple'|'place'}){return <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{kind==='portrait'?<><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></>:kind==='couple'?<path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6L12 21l8.8-8.8a5.4 5.4 0 0 0 0-7.6Z"/>:<><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></>}</svg>}
 
 export default function PhotographerProfile(){
-  return <section className="photographer-section section-shell" aria-labelledby="photographer-title">
-    <div className="photographer-intro">
-      <div className="eyebrow">DERRIÈRE L’OBJECTIF</div>
-      <h2 id="photographer-title">Un regard.<br/><em>Une rencontre.</em></h2>
-      <p>Découvrez l’univers de Zakaria et partagez ce que vous aimeriez raconter à travers vos images.</p>
-      <Link href="/portfolio" className="text-link">Explorer le portfolio <Arrow/></Link>
-    </div>
-    <article className="photographer-card">
-      <div className="photographer-card-top"><span>LE PHOTOGRAPHE</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></div>
-      <div className="photographer-identity"><Image src="/images/client-logo.png" width={88} height={88} alt="Logo Z4, photo de profil de Zakaria"/><div><h3>ZAKARIA Als</h3><a href="https://www.instagram.com/photo_graphe.z4/" target="_blank" rel="noopener noreferrer" aria-label="Profil Instagram de photo_graphe.z4, nouvel onglet">@photo_graphe.z4 <span aria-hidden="true">↗</span></a></div></div>
-      <p className="photographer-note">L’inspiration commence<br/>par <em>un premier échange.</em></p>
-      <div className="photographer-card-actions"><a className="photographer-instagram" href="https://www.instagram.com/photo_graphe.z4/" target="_blank" rel="noopener noreferrer">Découvrir son Instagram <Arrow/><span className="sr-only"> (nouvel onglet)</span></a><Link href="/contact">Parlons de votre projet <span aria-hidden="true">↗</span></Link></div>
-    </article>
-  </section>;
+ return <section id="instagram" className="photographer-section section-shell" aria-labelledby="photographer-title">
+  <div className="photographer-intro"><div className="eyebrow"><Bilingual fr="RETROUVONS-NOUS SUR INSTAGRAM" en="LET’S MEET ON INSTAGRAM"/></div><h2 id="photographer-title"><Bilingual fr={<>Un regard.<br/><em>Au fil des jours.</em></>} en={<>A point of view.<br/><em>Day by day.</em></>}/></h2><p><Bilingual fr="Les coulisses, les rencontres et la lumière de Marrakech. Retrouvez l’univers de Zakaria sur Instagram et imaginons votre prochaine séance." en="Behind the scenes, new encounters and the light of Marrakech. Discover Zakaria’s world on Instagram and imagine your next session."/></p><a href={instagram} target="_blank" rel="noopener noreferrer" className="text-link">@photo_graphe.z4 <Arrow/><span className="sr-only"> (nouvel onglet)</span></a></div>
+  <article className="instagram-profile" aria-label="Profil Instagram de PhotographZ4">
+   <header className="instagram-profile-top"><a href={instagram} target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le profil Instagram de PhotographZ4 (nouvel onglet)"><InstagramIcon/><span>Instagram</span></a><span className="instagram-profile-kicker">PHOTOGRAPHZ4</span></header>
+   <div className="instagram-profile-body">
+    <div className="instagram-profile-identity"><a className="instagram-avatar-ring" href={instagram} target="_blank" rel="noopener noreferrer" aria-label="Voir @photo_graphe.z4 sur Instagram (nouvel onglet)"><span><Image src="/images/photographz4-transparent.png" width={1857} height={847} sizes="100px" alt="Logo original PhotographZ4"/></span></a><div><a className="instagram-handle" href={instagram} target="_blank" rel="noopener noreferrer">photo_graphe.z4</a><h3>ZAKARIA Als</h3><span className="instagram-category"><Bilingual fr="Photographe · Marrakech" en="Photographer · Marrakech"/></span></div></div>
+    <div className="instagram-bio"><p>Capture, Create, Tell Stories.</p><p><Bilingual fr="Portraits, couples & instants de vie." en="Portraits, couples & life’s little moments."/><br/><Bilingual fr="Votre histoire, à travers mon regard." en="Your story, through my lens."/></p><Link href="/contact"><Bilingual fr="Organisons votre séance" en="Let’s plan your session"/> ↗</Link></div>
+    <div className="instagram-profile-actions"><a href={instagram} target="_blank" rel="noopener noreferrer" className="instagram-follow"><InstagramIcon/><Bilingual fr="Suivre sur Instagram" en="Follow on Instagram"/><span className="sr-only"> (nouvel onglet)</span></a><Link href="/contact" className="instagram-message"><Bilingual fr="Me contacter" en="Contact me"/></Link></div>
+    <nav className="instagram-highlights" aria-label="Découvrir les univers photographiques">{[{kind:'portrait' as const,fr:'Portraits',en:'Portraits',href:'/services/portrait'},{kind:'couple' as const,fr:'À deux',en:'Together',href:'/services/couple'},{kind:'place' as const,fr:'Marrakech',en:'Marrakech',href:'/contact'}].map(item=><Link href={item.href} key={item.kind}><span className={`instagram-highlight-ring instagram-highlight-${item.kind}`}><span><HighlightIcon kind={item.kind}/></span></span><Bilingual fr={item.fr} en={item.en}/></Link>)}</nav>
+   </div>
+   <a className="instagram-publications" href={instagram} target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg><Bilingual fr="Voir les publications sur Instagram" en="View posts on Instagram"/><Arrow/></a>
+  </article>
+ </section>;
 }
