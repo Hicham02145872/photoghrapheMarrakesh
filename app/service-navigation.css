@@ -1,0 +1,56 @@
+/* Dropdowns share the same structure on keyboard, touch and desktop. */
+.header-navigation{display:flex;align-items:center;gap:22px}
+.nav-dropdown{position:relative}
+.nav-dropdown-trigger{display:flex;align-items:center;gap:0}
+.nav-dropdown-trigger>button{display:grid;place-items:center;width:36px;min-height:44px;border:0;background:transparent;color:inherit;font-size:19px}
+.nav-dropdown-trigger>button[aria-expanded=true]>span{transform:rotate(180deg)}
+.desktop-nav .nav-dropdown-panel{position:absolute;top:calc(100% + 8px);left:-18px;z-index:60;width:290px;max-height:min(70svh,650px);overflow:auto;background:var(--cream);color:var(--ink);border:1px solid var(--line);box-shadow:0 18px 45px #30201820;border-radius:8px;padding:10px}
+.nav-dropdown-panel[hidden],.nav-submenu-links[hidden]{display:none!important}
+.desktop-nav .nav-dropdown-panel a,.desktop-nav .nav-dropdown-panel button{font-family:var(--font-body),sans-serif;font-size:13px;letter-spacing:0;line-height:1.5;min-height:44px;width:100%;padding:10px 14px;display:flex;align-items:center;text-align:left;gap:12px;justify-content:space-between;border:0;background:transparent;color:var(--ink);border-radius:4px}
+.desktop-nav .nav-dropdown-panel a:after{display:none}
+.nav-dropdown-panel a:hover,.nav-dropdown-panel button:hover{background:var(--surface)!important;color:var(--terra)!important}
+.nav-dropdown-panel a[aria-current=page]{background:var(--surface);color:var(--terra)}
+.nav-submenu-links{margin:2px 0 8px 12px;padding-left:8px;border-left:1px solid var(--border)}
+.nav-all-services{border-top:1px solid var(--line)!important;margin-top:6px;border-radius:0!important;font-weight:500}
+body:has(.immersive-hero) .header .nav-dropdown-panel a:focus-visible,body:has(.immersive-hero) .header .nav-dropdown-panel button:focus-visible{outline-color:var(--terra)}
+.nav-submenu-toggle>span{font-size:18px;line-height:1}
+.mobile-nav .header-navigation{display:flex;flex-direction:column;align-items:stretch;gap:0}
+.mobile-nav .nav-dropdown-trigger{justify-content:space-between}
+.mobile-nav .nav-dropdown-trigger>a{flex:1}
+.mobile-nav .nav-dropdown-trigger>button{width:48px;border:1px solid var(--line);border-radius:4px}
+.mobile-nav .nav-dropdown-panel{padding:6px 10px 14px;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav .nav-dropdown-panel a,.mobile-nav .nav-dropdown-panel button{display:flex;justify-content:space-between;align-items:center;width:100%;font-family:var(--font-body),sans-serif;font-size:14px;line-height:1.6;min-height:44px;padding:10px 8px;border:0;background:transparent;color:var(--ink);text-align:left}
+.mobile-nav:not([hidden]){position:absolute;z-index:50;left:0;right:0;max-height:calc(100svh - 96px);overflow-y:auto;background:var(--cream);color:var(--ink);padding:18px 6% 24px;border-bottom:1px solid var(--line)}
+@media(max-width:1120px){.header .desktop-nav,.header .header-cta{display:none}.header .menu-toggle{display:flex}.header{gap:16px}.header>.language-switcher{margin-left:auto}}
+
+/* Service packages and the connected enquiry. */
+.service-pricing{padding-block:55px 50px;border-top:1px solid var(--line);scroll-margin-top:30px}
+.service-pricing .section-heading h2{margin-top:16px;font-size:clamp(35px,4vw,52px)}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.pricing-card{display:flex;flex-direction:column;min-width:0;border:1px solid var(--line);background:var(--cream);padding:30px 26px;border-radius:8px}
+.pricing-card-featured{background:var(--surface);border-color:var(--terra)}
+.pricing-card-heading{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px}
+.pricing-card-heading .eyebrow{grid-column:1/-1}
+.pricing-card h3{font-size:30px;letter-spacing:-.8px}
+.pricing-duration{font-size:12px;color:var(--muted);white-space:nowrap}
+.pricing-amount{font-family:var(--font-display),Georgia,serif;font-size:55px;line-height:1.1;margin-block:26px;color:var(--terra)}
+.pricing-amount>span{font-size:27px}
+.pricing-card ul{list-style:none;margin:0 0 28px;padding:0;flex:1}
+.pricing-card li{font-size:13px;line-height:1.7;display:flex;gap:10px;padding-block:8px;border-bottom:1px solid var(--line)}
+.pricing-card li:before{content:'✓';color:var(--terra);flex-shrink:0}
+.pricing-card .button{width:100%;padding:14px 17px;gap:12px}
+.pricing-note{font-size:12px;line-height:1.8;color:var(--muted);max-width:800px;margin-top:24px}
+.pricing-quote{display:flex;align-items:center;justify-content:space-between;gap:32px;background:var(--surface);padding:36px;border-radius:8px}
+.pricing-quote h3{font-size:31px;letter-spacing:-.8px;margin-bottom:16px}
+.pricing-quote p{font-size:14px;line-height:1.8;color:var(--muted);max-width:600px}
+.pricing-quote .button{flex-shrink:0}
+.booking-form{scroll-margin-top:30px}
+.booking-selection{display:flex;flex-direction:column;gap:10px;margin-bottom:26px;background:var(--surface);border-left:3px solid var(--terra);padding:20px}
+.booking-selection strong{font-weight:500;font-size:16px;line-height:1.6}
+.booking-selection>span:last-child{font-size:13px;color:var(--muted)}
+.booking-phone{grid-column:1/-1}
+.makeup-advice{padding-block:40px 65px;max-width:850px}
+.makeup-advice h2{font-size:34px;margin-block:30px 18px}
+.makeup-advice p{font-size:16px;line-height:1.9;color:var(--muted);margin-bottom:20px}
+@media(max-width:900px){.pricing-grid{grid-template-columns:1fr;max-width:580px;margin-inline:auto}.pricing-quote{flex-direction:column;align-items:flex-start}.pricing-card{padding:26px}.service-pricing{padding-block:35px}.service-pricing .section-heading{gap:22px}.pricing-amount{font-size:48px}}
+@media(prefers-reduced-motion:reduce){.nav-dropdown-trigger>button>span{transition:none}}
