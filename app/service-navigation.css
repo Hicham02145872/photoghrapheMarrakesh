@@ -72,3 +72,10 @@ body:has(.immersive-hero) .header .nav-dropdown-panel a:focus-visible,body:has(.
 @media(max-width:900px){.pricing-grid{grid-template-columns:1fr;max-width:580px;margin-inline:auto}.pricing-quote{flex-direction:column;align-items:flex-start}.pricing-card{padding:26px}.service-pricing{padding-block:35px}.service-pricing .section-heading{gap:22px}.pricing-amount{font-size:48px}}
 @media(prefers-reduced-motion:reduce){.nav-dropdown-trigger>button>span{transition:none}}
 .service-contact{display:grid;grid-template-columns:1.3fr 1fr;gap:45px;padding:35px;margin-block:15px 55px;background:var(--surface);border:1px solid var(--line);border-radius:8px}.service-contact h2{font-size:clamp(28px,3vw,40px);margin:18px 0}.service-contact p{font-size:14px;line-height:1.8;color:var(--muted);max-width:520px}.service-contact-links{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:8px}.service-contact-links>a{min-height:44px;display:flex;align-items:center;overflow-wrap:anywhere}.service-contact-links .button{margin-bottom:5px}.service-contact-links>a:not(.button){font-size:14px}@media(max-width:767px){.service-contact{grid-template-columns:1fr;padding:25px;gap:20px}}
+/* Clean dropdown controls: hidden until keyboard focus on desktop, visible on touch. */
+.nav-chevron{display:block;transition:transform .2s}
+.nav-dropdown-trigger>button[aria-expanded=true]>.nav-chevron{transform:rotate(180deg)}
+.desktop-nav .nav-dropdown-trigger>button{width:0;min-width:0;padding:0;overflow:hidden;opacity:0}
+.desktop-nav .nav-dropdown-trigger>button:focus-visible{width:30px;opacity:1;overflow:visible}
+.mobile-nav .nav-dropdown-trigger>button .nav-chevron{width:16px;height:16px}
+@media(prefers-reduced-motion:reduce){.nav-chevron{transition:none}}
