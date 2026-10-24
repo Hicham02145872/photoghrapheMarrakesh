@@ -49,3 +49,17 @@ Pinterest source links document provenance; they do not establish a reuse licens
 | pinterest-482659285075952419.webp | https://www.pinterest.com/pin/482659285075952419/ |
 | pinterest-964685182794589380.webp | https://www.pinterest.com/pin/964685182794589380/ |
 | pinterest-275775177176966071.webp | https://www.pinterest.com/pin/275775177176966071/ |
+
+
+## Marrakech editorial collection
+
+Six licensed Pexels photographs displayed separately from the three supplied PhotographZ4 photographs. Downloaded at 2400 px wide, delivered as WebP. License: https://www.pexels.com/license/
+
+- editorial-bahia.webp — Tugce Turan — https://www.pexels.com/photo/courtyard-of-bahia-palace-in-marrakesh-morocco-25748823/
+- editorial-souks.webp — Harriet B. — https://www.pexels.com/photo/a-market-with-many-lamps-hanging-from-the-ceiling-18687094/
+- editorial-majorelle.webp — Piotr Arnoldes — https://www.pexels.com/photo/bright-blue-villa-in-lush-green-garden-in-daylight-6441178/
+- editorial-ben-youssef.webp — Furknsaglam — https://www.pexels.com/photo/ben-youssef-madrasa-in-marrakesh-20686584/
+- editorial-koutoubia.webp — Tugce Turan — https://www.pexels.com/photo/the-koutoubia-mosque-and-palm-trees-in-marrakesh-morocco-25748808/
+- editorial-el-badi.webp — abdellatif jellab — https://www.pexels.com/photo/exploring-ruins-of-el-badi-palace-in-marrakech-35784107/
+
+Audit: the original eight template photographs from commit 73acf38 are absent from current public/images and have no remaining application references.
