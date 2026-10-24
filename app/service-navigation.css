@@ -1,4 +1,21 @@
 /* Dropdowns share the same structure on keyboard, touch and desktop. */
+html{scroll-padding-top:128px}
+.site-header-shell{position:sticky;top:0;z-index:70;width:100%;background:var(--cream)}
+.site-header-shell.is-scrolled{box-shadow:0 4px 24px #30201812;border-bottom:1px solid var(--line)}
+body:has(.immersive-hero) .site-header-shell{position:fixed;inset:0 0 auto;background:transparent}
+body:has(.immersive-hero) .site-header-shell .header{position:relative;inset:auto;z-index:auto}
+body:has(.immersive-hero) .site-header-shell.is-scrolled{background:var(--cream)}
+body:has(.immersive-hero) .site-header-shell.is-scrolled .header{color:var(--ink);border-bottom:0}
+body:has(.immersive-hero) .site-header-shell.is-scrolled .brand-logo img{filter:none;opacity:1}
+body:has(.immersive-hero) .site-header-shell.is-scrolled .desktop-nav a:after{background:var(--terra)}
+body:has(.immersive-hero) .site-header-shell.is-scrolled .header-cta{background:var(--ink);color:var(--on-dark)}
+body:has(.immersive-hero) .site-header-shell.is-scrolled .language-switcher button{color:var(--ink);border-color:var(--border)}
+body:has(.immersive-hero) .site-header-shell.is-scrolled .language-switcher button.active{background:var(--ink);color:var(--on-dark)}
+body:has(.immersive-hero) .site-header-shell.is-scrolled .menu-toggle{color:var(--ink);border-color:var(--border)}
+body:has(.immersive-hero) .site-header-shell.is-scrolled .header a:focus-visible,body:has(.immersive-hero) .site-header-shell.is-scrolled .header button:focus-visible{outline-color:var(--terra)}
+.site-header-shell .mobile-nav:not([hidden]),body:has(.immersive-hero) .site-header-shell .mobile-nav:not([hidden]){top:100%;z-index:80;background:var(--cream);color:var(--ink)}
+.desktop-nav .nav-dropdown:after{content:'';position:absolute;left:-18px;right:-18px;top:100%;height:12px}
+@media(max-width:767px){html{scroll-padding-top:108px}}
 .header-navigation{display:flex;align-items:center;gap:22px}
 .nav-dropdown{position:relative}
 .nav-dropdown-trigger{display:flex;align-items:center;gap:0}
@@ -54,3 +71,4 @@ body:has(.immersive-hero) .header .nav-dropdown-panel a:focus-visible,body:has(.
 .makeup-advice p{font-size:16px;line-height:1.9;color:var(--muted);margin-bottom:20px}
 @media(max-width:900px){.pricing-grid{grid-template-columns:1fr;max-width:580px;margin-inline:auto}.pricing-quote{flex-direction:column;align-items:flex-start}.pricing-card{padding:26px}.service-pricing{padding-block:35px}.service-pricing .section-heading{gap:22px}.pricing-amount{font-size:48px}}
 @media(prefers-reduced-motion:reduce){.nav-dropdown-trigger>button>span{transition:none}}
+.service-contact{display:grid;grid-template-columns:1.3fr 1fr;gap:45px;padding:35px;margin-block:15px 55px;background:var(--surface);border:1px solid var(--line);border-radius:8px}.service-contact h2{font-size:clamp(28px,3vw,40px);margin:18px 0}.service-contact p{font-size:14px;line-height:1.8;color:var(--muted);max-width:520px}.service-contact-links{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:8px}.service-contact-links>a{min-height:44px;display:flex;align-items:center;overflow-wrap:anywhere}.service-contact-links .button{margin-bottom:5px}.service-contact-links>a:not(.button){font-size:14px}@media(max-width:767px){.service-contact{grid-template-columns:1fr;padding:25px;gap:20px}}
