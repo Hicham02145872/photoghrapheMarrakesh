@@ -29,7 +29,7 @@ export default async function Service({params}:{params:Promise<{slug:string}>}){
    <h1>{service.title}<em>Une histoire à vous.</em></h1>
    <p className="lead">{service.intro}</p><p>{service.detail}</p>
    <Link href={bookingHref(service.slug)} className="button dark">Parlons de cette séance <Arrow/></Link>
-  </div><figure><Image src={'/images/'+service.image} width={700} height={900} sizes="(max-width:767px) 88vw, 43vw" alt={'Inspiration PhotographZ4 pour une séance '+service.title.toLowerCase()} priority/><figcaption>INSPIRATION PHOTOGRAPHIQUE · PINTEREST</figcaption></figure></section>
+  </div><figure><Image src={'/images/'+service.image} width={700} height={900} sizes="(max-width:767px) 88vw, 43vw" alt={'Inspiration PhotographZ4 pour une séance '+service.title.toLowerCase()} priority/><figcaption>{['mariage','riad','majorelle'].includes(service.slug)?'PHOTOGRAPHIE · PHOTOGRAPHZ4':'INSPIRATION PHOTOGRAPHIQUE · PINTEREST'}</figcaption></figure></section>
   <ServiceSectionNav/>
   <ServiceStory slug={slug}/>
   <ServiceGallery photos={servicePhotos[slug]} title={service.title}/>

@@ -109,3 +109,12 @@ Additional Pinterest references, shown as inspiration rather than PhotographZ4 c
 | services/sous-les-etoiles-538672805433138645.webp | https://www.pinterest.com/pin/538672805433138645/ |
 | services/interieur-13510867618441891.webp | https://www.pinterest.com/pin/13510867618441891/ |
 | services/interieur-149885493820280306.webp | https://www.pinterest.com/pin/149885493820280306/ |
+
+
+## Client ZIP import
+
+49 photographs supplied in `WhatsApp Unknown 2026-10-25 at 15.49.14.zip`, added to the client portfolio. Original filenames are recorded in `lib/client-photo-import.json`. Optimized WebP files retain their aspect ratios, without upscaling.
+
+Wedding service cover: `wedding-client.webp`, supplied by the client in this conversation.
+
+Riad and Majorelle service covers: `riad-client-cover.webp` and `majorelle-client-cover.webp`, supplied by the client.

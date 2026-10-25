@@ -1,0 +1,345 @@
+[
+  {
+    "src": "client-portfolio/photo-01.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 01",
+    "width": 736,
+    "height": 1040
+  },
+  {
+    "src": "client-portfolio/photo-02.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 02",
+    "width": 736,
+    "height": 920
+  },
+  {
+    "src": "client-portfolio/photo-03.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 03",
+    "width": 736,
+    "height": 981
+  },
+  {
+    "src": "client-portfolio/photo-04.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 04",
+    "width": 736,
+    "height": 981
+  },
+  {
+    "src": "client-portfolio/photo-05.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 05",
+    "width": 735,
+    "height": 1103
+  },
+  {
+    "src": "client-portfolio/photo-06.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 06",
+    "width": 736,
+    "height": 919
+  },
+  {
+    "src": "client-portfolio/photo-07.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 07",
+    "width": 736,
+    "height": 1052
+  },
+  {
+    "src": "client-portfolio/photo-08.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 08",
+    "width": 736,
+    "height": 920
+  },
+  {
+    "src": "client-portfolio/photo-09.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 09",
+    "width": 736,
+    "height": 920
+  },
+  {
+    "src": "client-portfolio/photo-10.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 10",
+    "width": 736,
+    "height": 981
+  },
+  {
+    "src": "client-portfolio/photo-11.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 11",
+    "width": 720,
+    "height": 1080
+  },
+  {
+    "src": "client-portfolio/photo-12.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 12",
+    "width": 736,
+    "height": 1104
+  },
+  {
+    "src": "client-portfolio/photo-13.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 13",
+    "width": 720,
+    "height": 847
+  },
+  {
+    "src": "client-portfolio/photo-14.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 14",
+    "width": 736,
+    "height": 1051
+  },
+  {
+    "src": "client-portfolio/photo-15.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 15",
+    "width": 736,
+    "height": 1104
+  },
+  {
+    "src": "client-portfolio/photo-16.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 16",
+    "width": 736,
+    "height": 1104
+  },
+  {
+    "src": "client-portfolio/photo-17.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 17",
+    "width": 736,
+    "height": 1104
+  },
+  {
+    "src": "client-portfolio/photo-18.webp",
+    "category": "Portraits",
+    "title": "Un regard sur Marrakech · 18",
+    "width": 736,
+    "height": 981
+  },
+  {
+    "src": "client-portfolio/photo-19.webp",
+    "category": "Familles",
+    "title": "Les liens qui nous unissent · 19",
+    "width": 736,
+    "height": 1104
+  },
+  {
+    "src": "client-portfolio/photo-20.webp",
+    "category": "Familles",
+    "title": "Les liens qui nous unissent · 20",
+    "width": 736,
+    "height": 981
+  },
+  {
+    "src": "client-portfolio/photo-21.webp",
+    "category": "Familles",
+    "title": "Les liens qui nous unissent · 21",
+    "width": 736,
+    "height": 976
+  },
+  {
+    "src": "client-portfolio/photo-22.webp",
+    "category": "Familles",
+    "title": "Les liens qui nous unissent · 22",
+    "width": 736,
+    "height": 981
+  },
+  {
+    "src": "client-portfolio/photo-23.webp",
+    "category": "Familles",
+    "title": "Les liens qui nous unissent · 23",
+    "width": 736,
+    "height": 913
+  },
+  {
+    "src": "client-portfolio/photo-24.webp",
+    "category": "Entre amis",
+    "title": "Un moment à partager · 24",
+    "width": 736,
+    "height": 971
+  },
+  {
+    "src": "client-portfolio/photo-25.webp",
+    "category": "Familles",
+    "title": "Les liens qui nous unissent · 25",
+    "width": 736,
+    "height": 920
+  },
+  {
+    "src": "client-portfolio/photo-26.webp",
+    "category": "Familles",
+    "title": "Les liens qui nous unissent · 26",
+    "width": 736,
+    "height": 981
+  },
+  {
+    "src": "client-portfolio/photo-27.webp",
+    "category": "Familles",
+    "title": "Les liens qui nous unissent · 27",
+    "width": 735,
+    "height": 979
+  },
+  {
+    "src": "client-portfolio/photo-28.webp",
+    "category": "Familles",
+    "title": "Les liens qui nous unissent · 28",
+    "width": 736,
+    "height": 978
+  },
+  {
+    "src": "client-portfolio/photo-29.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 29",
+    "width": 736,
+    "height": 1308
+  },
+  {
+    "src": "client-portfolio/photo-30.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 30",
+    "width": 736,
+    "height": 1308
+  },
+  {
+    "src": "client-portfolio/photo-31.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 31",
+    "width": 736,
+    "height": 920
+  },
+  {
+    "src": "client-portfolio/photo-32.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 32",
+    "width": 736,
+    "height": 920
+  },
+  {
+    "src": "client-portfolio/photo-33.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 33",
+    "width": 736,
+    "height": 920
+  },
+  {
+    "src": "client-portfolio/photo-34.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 34",
+    "width": 736,
+    "height": 919
+  },
+  {
+    "src": "client-portfolio/photo-35.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 35",
+    "width": 736,
+    "height": 920
+  },
+  {
+    "src": "client-portfolio/photo-36.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 36",
+    "width": 735,
+    "height": 980
+  },
+  {
+    "src": "client-portfolio/photo-37.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 37",
+    "width": 736,
+    "height": 981
+  },
+  {
+    "src": "client-portfolio/photo-38.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 38",
+    "width": 736,
+    "height": 1105
+  },
+  {
+    "src": "client-portfolio/photo-39.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 39",
+    "width": 736,
+    "height": 1103
+  },
+  {
+    "src": "client-portfolio/photo-40.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 40",
+    "width": 735,
+    "height": 1106
+  },
+  {
+    "src": "client-portfolio/photo-41.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 41",
+    "width": 735,
+    "height": 1106
+  },
+  {
+    "src": "client-portfolio/photo-42.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 42",
+    "width": 736,
+    "height": 1105
+  },
+  {
+    "src": "client-portfolio/photo-43.webp",
+    "category": "Grossesse",
+    "title": "Avant la rencontre · 43",
+    "width": 736,
+    "height": 914
+  },
+  {
+    "src": "client-portfolio/photo-44.webp",
+    "category": "Grossesse",
+    "title": "Avant la rencontre · 44",
+    "width": 736,
+    "height": 917
+  },
+  {
+    "src": "client-portfolio/photo-45.webp",
+    "category": "Grossesse",
+    "title": "Avant la rencontre · 45",
+    "width": 736,
+    "height": 917
+  },
+  {
+    "src": "client-portfolio/photo-46.webp",
+    "category": "Grossesse",
+    "title": "Avant la rencontre · 46",
+    "width": 736,
+    "height": 920
+  },
+  {
+    "src": "client-portfolio/photo-47.webp",
+    "category": "Grossesse",
+    "title": "Avant la rencontre · 47",
+    "width": 736,
+    "height": 920
+  },
+  {
+    "src": "client-portfolio/photo-48.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 48",
+    "width": 735,
+    "height": 980
+  },
+  {
+    "src": "client-portfolio/photo-49.webp",
+    "category": "Couples",
+    "title": "Une histoire à deux · 49",
+    "width": 735,
+    "height": 980
+  }
+]
