@@ -118,3 +118,9 @@ Additional Pinterest references, shown as inspiration rather than PhotographZ4 c
 Wedding service cover: `wedding-client.webp`, supplied by the client in this conversation.
 
 Riad and Majorelle service covers: `riad-client-cover.webp` and `majorelle-client-cover.webp`, supplied by the client.
+
+## Landing page portrait
+
+- riad-woman-portrait.webp — Aymane Hanni — https://www.pexels.com/photo/elegant-woman-in-traditional-moroccan-dress-30357976/
+- Pexels license: https://www.pexels.com/license/
+- Used as a photographic inspiration image in the landing page introduction, separately from the supplied photographs. Optimized as WebP at 1400 px wide.
